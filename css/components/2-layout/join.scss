@@ -1,0 +1,151 @@
+.join {
+    padding: 100px 0;
+    background-color:#0E283D;
+    .auto__container {
+        max-width: 1720px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $white;
+        &-buttons {
+            width: calc(45% - 15px);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        &-link {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            margin-right: 56px;
+            &:hover {
+                opacity: .8;
+                text-decoration: underline;
+                text-underline-offset: 5px;
+            }
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                margin-right: 30px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        h2 {
+            width: calc(55% - 15px);
+            max-width: 800px;
+        }
+    }
+}
+// 1380px
+@mixin join-xxxlg-xxxxlg {
+    .join {
+        padding: 80px 0;
+        &__inner {
+            &-link {
+                margin-right: 40px;
+                font-size: 16px;
+                line-height: 22px;
+                span {
+                    width: 26px;
+                    height: 26px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+  }
+  // 1250px
+  @mixin join-xlg-xxlg-extra {
+    .join {
+    }
+  }
+  // 1180px
+  @mixin join-xlg-xxlg {
+    .join {
+        padding: 60px 0;
+    }
+  }
+  // 1024px
+  @mixin join-lg-xlg {
+    .join {
+        &__inner {
+            &-link {
+                margin-right: 30px;
+                font-size: 14px;
+                line-height: 20px;
+                span {
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 14px;
+                }
+            }
+            .button {
+                padding: 10px 18px;
+            }
+        }
+    }
+  }
+  // 930px
+  @mixin join-md-lg {
+    .join {
+        padding: 40px 0;
+        &__inner {
+            flex-direction: column;
+            &-buttons {
+                width: 100%;
+                justify-content: flex-start;
+            }
+            h2 {
+                width: 100%;
+                max-width: unset;
+                margin-bottom: 30px;
+            }
+        }
+    }
+  }
+  // 750px
+  @mixin join-sm-md {
+    .join {
+    }
+  }
+  // 650px
+  @mixin join-sm-md-extra {
+    .join {
+    }
+  }
+  // 540px
+  @mixin join-xsm-sm {
+    .join {
+        &__inner {
+            flex-direction: column;
+            &-buttons {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            &-link {
+                margin: 0 0 24px 0;
+            }
+            h2 {
+                text-align: center;
+            }
+            .button {
+                width: 100%;
+            }
+        }
+    }
+  }
+  // 440px
+  @mixin join-xxsm-xsm {
+    .join {
+    }
+  }

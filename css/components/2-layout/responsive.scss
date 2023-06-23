@@ -1,0 +1,242 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  h1 {
+    font-size: 65px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    &.ex {
+      font-size: 32px;
+    }
+  }
+  @include nav-xxxlg-xxxxlg;
+  @include hero-xxxlg-xxxxlg;
+  @include feature-xxxlg-xxxxlg;
+  @include customers-xxxlg-xxxxlg;
+  @include join-xxxlg-xxxxlg;
+  @include faq-xxxlg-xxxxlg;
+  @include intro-xxxlg-xxxxlg;
+  @include access-xxxlg-xxxxlg;
+  @include testimonial-xxxlg-xxxxlg;
+  @include about-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  p {
+    &.ex {
+      font-size: 28px;
+    }
+  }
+  @include hero-xlg-xxlg;
+  @include feature-xlg-xxlg;
+  @include customers-xlg-xxlg;
+  @include join-xlg-xxlg;
+  @include intro-xlg-xxlg;
+  @include access-xlg-xxlg;
+  @include testimonial-xlg-xxlg;
+  @include about-xlg-xxlg;
+  @include performance-xlg-xxlg;
+  @include history-xlg-xxlg;
+  @include partners-xlg-xxlg;
+  @include info-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  // ::-webkit-scrollbar {
+  //   display: none;
+  // }
+  p {
+    &.ex {
+      font-size: 24px;
+    }
+  }
+  .main {
+    padding-top: 59.31px;
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include hero-lg-xlg;
+  @include feature-lg-xlg;
+  @include customers-lg-xlg;
+  @include join-lg-xlg;
+  @include faq-lg-xlg;
+  @include access-lg-xlg;
+  @include testimonial-lg-xlg;
+  @include about-lg-xlg;
+  @include advantages-lg-xlg;
+  @include history-lg-xlg;
+  @include partners-lg-xlg;
+}
+// 930px
+@include md-lg {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 23px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    &.ex {
+      font-size: 22px;
+    }
+  }
+  .progress {
+    margin: 0 0 10px;
+  }
+  .bar {
+    border-width: 6px;
+    width: 150px;
+    height: 150px;
+    &Overflow {
+      margin-bottom: -35px;
+      width: 150px;
+      height: 75px;
+    }
+  }
+  @include hero-md-lg;
+  @include feature-md-lg;
+  @include customers-md-lg;
+  @include faq-md-lg;
+  @include intro-md-lg;
+  @include access-md-lg;
+  @include advantages-md-lg;
+  @include join-md-lg;
+  @include testimonial-md-lg;
+  @include performance-md-lg;
+  @include info-md-lg;
+  @include partners-md-lg;
+  @include footer-md-lg;
+}
+// 840px
+@include md-lg-extra {
+  @include access-md-lg-extra;
+  @include advantages-md-lg-extra;
+  @include history-md-lg-extra;
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 20px;
+  }
+  @include nav-sm-md;
+  @include hero-sm-md;
+  @include customers-sm-md;
+  @include advantages-sm-md;
+  @include testimonial-sm-md;
+  @include partners-sm-md;
+  @include footer-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+    &.big {
+      font-size: 16px;
+    }
+    &.ex {
+      font-size: 20px;
+    }
+  }
+  @include hero-sm-md-extra;
+  @include feature-sm-md-extra;
+  @include customers-sm-md-extra;
+  @include intro-sm-md-extra;
+  @include access-sm-md-extra;
+  @include about-sm-md-extra;
+  @include info-sm-md-extra;
+  @include partners-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  h1 {
+    font-size: 40px;
+  }
+  .video {
+    padding-bottom: 56%;
+  }
+  @include hero-xsm-sm;
+  @include feature-xsm-sm;
+  @include customers-xsm-sm;
+  @include faq-xsm-sm;
+  @include join-xsm-sm;
+  @include testimonial-xsm-sm;
+  @include about-xsm-sm;
+  @include performance-xsm-sm;
+  @include history-xsm-sm;
+  @include footer-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  h1 {
+    font-size: 33px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h6 {
+    font-size: 12px;
+  }
+  @include hero-xxsm-xsm;
+  @include customers-xxsm-xsm;
+  @include faq-xxsm-xsm;
+  @include intro-xxsm-xsm;
+  @include access-xxsm-xsm;
+  @include advantages-xxsm-xsm;
+  @include about-xxsm-xsm;
+  @include info-xxsm-xsm;
+  @include partners-xxsm-xsm;
+  @include history-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  // @include hero-xxxsm-xxsm;
+}

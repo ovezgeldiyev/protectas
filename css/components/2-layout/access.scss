@@ -1,0 +1,260 @@
+.access {
+  padding: 120px 0;
+  &.sm {
+    padding-top: 0;
+    .access__inner {
+      &-content {
+        max-width: 530px;
+      }
+    }
+  }
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    &-content {
+      width: calc(50% - 15px);
+      max-width: 620px;
+      padding-top: 15px;
+    }
+    &-image {
+      position: relative;
+      padding-bottom: 100%;
+      &-wrapper {
+        width: calc(50% - 15px);
+        max-width: 630px;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include fullImage;
+      }
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    p {
+      margin-bottom: 24px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      color: $purple;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+      &:hover {
+        opacity: 1;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        color: #3b3071;
+        span {
+          img {
+            display: none;
+            &.dark {
+              display: block;
+            }
+          }
+        }
+      }
+      span {
+        width: 24px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+          &.dark {
+            display: none;
+          }
+        }
+      }
+    }
+    ul {
+      padding-top: 15px;
+      li {
+        padding-left: 30px;
+        position: relative;
+        margin-bottom: 35px;
+        font-size: 18px;
+        line-height: 133%;
+        font-weight: 400;
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 18px;
+          height: 18px;
+          top: 3px;
+          left: 0;
+          position: absolute;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+// 1380px
+@mixin access-xxxlg-xxxxlg {
+  .access {
+    padding: 90px 0;
+  }
+}
+// 1250px
+@mixin access-xlg-xxlg-extra {
+  .access {
+  }
+}
+// 1180px
+@mixin access-xlg-xxlg {
+  .access {
+    padding: 70px 0;
+    &__inner {
+      &-content {
+        padding: 0;
+      }
+      h2 {
+        margin-bottom: 24px;
+      }
+      ul {
+        padding: 0;
+        li {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+// 1024px
+@mixin access-lg-xlg {
+  .access {
+    &__inner {
+      &-content {
+        width: calc(50% - 10px);
+      }
+      &-image {
+        &-wrapper {
+          width: calc(50% - 10px);
+        }
+      }
+      h2 {
+        margin-bottom: 18px;
+      }
+      p {
+        margin-bottom: 18px;
+        br {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+      ul {
+        li {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+// 930px
+@mixin access-md-lg {
+  .access {
+    padding: 50px 0;
+    &__inner {
+      p {
+        br {
+          &:first-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+// 840px
+@mixin access-md-lg-extra {
+  .access {
+    &.sm {
+      .access__inner {
+        &-content {
+          max-width: unset;
+        }
+      }
+    }
+    &__inner {
+      flex-direction: column;
+      &-content {
+        width: 100%;
+        max-width: unset;
+      }
+      &-image {
+        &-wrapper {
+          width: 100%;
+          max-width: unset;
+          order: -1;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+// 750px
+@mixin access-sm-md {
+  .access {
+  }
+}
+// 650px
+@mixin access-sm-md-extra {
+  .access {
+    &__inner {
+      ul {
+        li {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      a {
+        font-size: 16px;
+        line-height: 22px;
+        span {
+          width: 20px;
+          height: 18px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}
+// 540px
+@mixin access-xsm-sm {
+  .access {
+  }
+}
+// 440px
+@mixin access-xxsm-xsm {
+  .access {
+    padding: 30px 0;
+    &__inner {
+      ul {
+        li {
+          margin-bottom: 10px;
+          padding-left: 24px;
+          span {
+            top: 5px;
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}

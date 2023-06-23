@@ -1,0 +1,170 @@
+.faq {
+  padding: 150px 0 20px;
+  background-color: $gray;
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    &-content {
+      width: calc(55% - 10px);
+      max-width: 740px;
+    }
+    h2 {
+      width: calc(45% - 10px);
+      margin-bottom: 390px;
+    }
+  }
+  &Item {
+    border-top: 1px solid #c4c4c4;
+    padding: 10px;
+    &:last-child {
+      border-bottom: 1px solid #c4c4c4;
+    }
+    h5 {
+      font-weight: 400;
+      position: relative;
+      padding: 15px 42px 15px 15px;
+      cursor: pointer;
+      &.active {
+        &::before {
+          transform: translateY(-50%) rotate(-45deg);
+        }
+      }
+      &::before {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        width: 9px;
+        height: 9px;
+        border-top: 1px solid $main;
+        border-right: 1px solid $main;
+        content: "";
+        transform: translateY(-50%) rotate(135deg);
+        transition: 0.3s ease;
+      }
+    }
+    p {
+      max-height: 0;
+      opacity: 0;
+      transition: 0.5s ease;
+      overflow: hidden;
+      padding: 0 30px;
+      &.active {
+        max-height: 170px;
+        opacity: 1;
+        padding: 5px 30px 15px;
+      }
+    }
+  }
+} 
+// 1380px
+@mixin faq-xxxlg-xxxxlg {
+  .faq {
+    padding: 110px 0 50px;
+  }
+}
+// 1250px
+@mixin faq-xlg-xxlg-extra {
+  .faq {
+  }
+}
+// 1180px
+@mixin faq-xlg-xxlg {
+  .faq {
+
+  }
+}
+// 1024px
+@mixin faq-lg-xlg {
+  .faq {
+    padding: 80px 0;
+    &__inner {
+        &-content {
+            width: calc(57% - 12px);
+        }
+        h2 {
+            width: calc(43% - 12px);
+            margin: 0;
+        }
+    }
+    &Item {
+        padding: 5px;
+        h5 {
+            padding: 15px 40px 15px 10px;
+        }
+        p {
+            padding: 0 24px;
+            &.active {
+                padding: 0 24px 10px;
+            }
+        }
+    }
+  }
+}
+// 930px
+@mixin faq-md-lg {
+  .faq {
+    padding: 60px 0;
+    &__inner {
+        flex-direction: column;
+        &-content {
+            width: 100%;
+            max-width: unset;
+        }
+        h2 {
+            width: 100%;
+            max-width: unset;
+            margin-bottom: 36px;
+        }
+    }
+  }
+}
+// 750px
+@mixin faq-sm-md {
+  .faq {
+  }
+}
+// 650px
+@mixin faq-sm-md-extra {
+  .faq {
+  }
+}
+// 540px
+@mixin faq-xsm-sm {
+  .faq {
+    padding: 40px 0;
+    &__inner {
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+    &Item {
+        padding: 0;
+        h5 {
+            font-size: 16px;
+            padding: 15px 35px 15px 8px;
+            &::before {
+                width: 8px;
+                height: 8px;
+                right: 10px;
+            }
+        }
+        p {
+            font-size: 13px;
+            padding: 0 18px;
+            &.active {
+                padding: 0 18px 10px;
+            }
+        }
+    }
+  }
+}
+// 440px
+@mixin faq-xxsm-xsm {
+  .faq {
+    &Item {
+        h5 {
+        }
+    }
+  }
+}

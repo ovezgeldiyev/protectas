@@ -1,0 +1,217 @@
+.advantages {
+  padding: 15px 0;
+  background-color: $gray;
+  transition: 0.4s ease;
+  &.sticky {
+    position: fixed;
+    top: 67px;
+    left: 0;
+    width: 100%;
+    z-index: 7;
+    box-shadow: 0px 4px 4px 0px #00000021;
+  }
+  &.top {
+    top: 0;
+  }
+  &__inner {
+    &-header {
+      display: none;
+    }
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-links {
+      display: flex;
+      align-items: center;
+      a {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        color: $main;
+        margin-right: 60px;
+        padding: 6px 15px;
+        background-color: transparent;
+        border-radius: 15px;
+        &.active {
+            background-color: #E5E5E4;
+        }
+        &:hover {
+          opacity: 1;
+          color: #9977fe;
+        }
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+// 1024px
+@mixin advantages-lg-xlg {
+  .advantages {
+    &.sticky {
+      top: 59.31px;
+    }
+    &.top {
+      top: 0;
+    }
+  }
+}
+// 930px
+@mixin advantages-md-lg {
+  .advantages {
+    padding: 12px 0;
+    &__inner {
+      &-links {
+        a {
+          margin-right: 40px;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
+// 840px
+@mixin advantages-md-lg-extra {
+  .advantages {
+    padding: 0;
+    &.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      background-color: #0000002c;
+      .auto__container {
+        padding: 0;
+      }
+      .advantages__inner {
+        &-header {
+          padding: 0 30px;
+        }
+        .button {
+          width: calc(100% - 60px);
+        }
+      }
+    }
+    &__inner {
+      &-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: end;
+        background-color: $gray;
+      }
+      &-row {
+        position: absolute;
+        top: 53.27px;
+        left: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: 0.6s ease;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        z-index: 99;
+        &.active {
+          max-height: 75vh;
+          opacity: 1;
+          padding-bottom: 30px;
+        }
+      }
+      &-links {
+        flex-direction: column;
+        width: 100%;
+        a {
+          width: 100%;
+          padding: 16px 30px;
+          border-bottom: 1px solid #d7d8d6;
+          margin: 0;
+          border-radius: unset;
+          &.active {
+            background-color: transparent;
+          }
+        }
+      }
+      h5 {
+        display: inline-block;
+        cursor: pointer;
+        padding: 16px 30px;
+        position: relative;
+        &::before {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          width: 9px;
+          height: 9px;
+          border-top: 2px solid $main;
+          border-right: 2px solid $main;
+          transform: translateY(-60%) rotate(135deg);
+          content: "";
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .button {
+        width: 100%;
+        padding: 15px 20px;
+      }
+    }
+  }
+}
+// 750px
+@mixin advantages-sm-md {
+  .advantages {
+    &.active {
+      .advantages__inner {
+        &-header {
+          padding: 0 20px;
+        }
+        .button {
+          width: calc(100% - 40px);
+        }
+      }
+    }
+    &__inner {
+      &-links {
+        a {
+          padding: 16px 20px;
+        }
+      }
+    }
+  }
+}
+// 650px
+@mixin advantages-sm-md-extra {
+  .advantages {
+  }
+}
+// 540px
+@mixin advantages-xsm-sm {
+  .advantages {
+  }
+}
+// 440px
+@mixin advantages-xxsm-xsm {
+  .advantages {
+    &__inner {
+      &-row {
+        top: 45.27px;
+        &.active {
+          padding-bottom: 20px;
+        }
+      }
+      h5 {
+        padding: 12px 25px;
+      }
+    }
+  }
+}
